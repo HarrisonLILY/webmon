@@ -1,0 +1,19 @@
+name = "uptime-monitor"
+type = "javascript"
+account_id = "your_account_id"
+compatibility_date = "2024-06-01"
+
+[triggers]
+crons = ["*/10 * * * *"]
+
+[vars]
+GOOGLE_API_KEY = "your_google_api_key"
+ADMIN_KEY = "your_admin_password"
+
+[[kv_namespaces]]
+binding = "STATUS_KV"
+id = "your_status_kv_id"
+
+[[kv_namespaces]]
+binding = "URL_KV"
+id = "your_url_kv_id"
