@@ -1,8 +1,11 @@
-# WebMon - Website Uptime + Safe Browsing Monitor
+# WebMon
+
+## Website Uptime + Safe Browsing Monitor
 
 A lightweight Cloudflare Worker that checks website availability and verifies against Google Safe Browsing.
 
 ## Features
+
 - Uptime checks via HTTP HEAD requests
 - Google Safe Browsing lookup (API v4)
 - Scheduled checks via Cloudflare Cron Triggers
@@ -18,6 +21,7 @@ A lightweight Cloudflare Worker that checks website availability and verifies ag
   - CSV export
 
 ## Deployment
+
 1. Clone repo:
    ```sh
    git clone https://github.com/yourusername/cloudflare-uptime-monitor
@@ -38,12 +42,14 @@ A lightweight Cloudflare Worker that checks website availability and verifies ag
    ```
 
 ## Tech Stack
+
 - Cloudflare Workers
 - JavaScript
 - KV Storage
 - Chart.js + Tailwind (CDN)
 
 ## Auth
+
 - `/admin/login` to access admin panel
 - Sessions expire after 1 hour
 - Uses secure HttpOnly cookie
